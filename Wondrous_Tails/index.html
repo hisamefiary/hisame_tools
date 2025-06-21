@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+  <meta charset="utf-8">
+  <title>クロの空想帳計算機</title>
+  <link rel="stylesheet" href="main.css">
+  <script type="text/javascript" src="main.js"></script>
+  <meta name="description" content="クロの空想帳のリセットを計算機" />
+</head>
+
+<body>
+  <div id="flex_mother">
+    <div id="base">
+      <input type="checkbox" id="cell_0" class="cell_input">
+      <input type="checkbox" id="cell_1" class="cell_input">
+      <input type="checkbox" id="cell_2" class="cell_input">
+      <input type="checkbox" id="cell_3" class="cell_input">
+      <input type="checkbox" id="cell_4" class="cell_input">
+      <input type="checkbox" id="cell_5" class="cell_input">
+      <input type="checkbox" id="cell_6" class="cell_input">
+      <input type="checkbox" id="cell_7" class="cell_input">
+      <input type="checkbox" id="cell_8" class="cell_input">
+      <input type="checkbox" id="cell_9" class="cell_input">
+      <input type="checkbox" id="cell_A" class="cell_input">
+      <input type="checkbox" id="cell_B" class="cell_input">
+      <input type="checkbox" id="cell_C" class="cell_input">
+      <input type="checkbox" id="cell_D" class="cell_input">
+      <input type="checkbox" id="cell_E" class="cell_input">
+      <input type="checkbox" id="cell_F" class="cell_input">
+    </div>
+    <button id="reset_button">リセット</button>
+    <table id="resulttable">
+      <tr id="tablehead" class="tabletr">
+        <th class="BINGOsum">ビンゴ数</th>
+        <th class="pattern">通り数</th>
+        <th class="percent">確率</th>
+        <th class="reset">リセ後<br>期待値</th>
+        <th class="BINGOpercent">以上確率</th>
+        <th class="BINGOreset">以上リセ後<br>期待値</th>
+        <th class="MGPdata">MGP合算値</th>
+      </tr>
+      <tr id="tableAll" class="tabletr">
+        <td class="BINGOsum">ALL</td>
+        <td class="pattern">変動</td>
+        <td class="percent">100.00%</td>
+        <td class="reset">100.00%</td>
+        <td class="BINGOpercent">-</td>
+        <td class="BINGOreset">-</td>
+        <td class="MGPdata">-</td>
+      </tr>
+      <tr id="table0" class="tabletr">
+        <td class="BINGOsum">0</td>
+        <td class="pattern">変動</td>
+        <td class="percent">変動</td>
+        <td class="reset">初期指定</td>
+        <td class="BINGOpercent">変動</td>
+        <td class="BINGOreset">初期指定</td>
+        <td class="MGPdata">0</td>
+      </tr>
+      <tr id="table1" class="tabletr">
+        <td class="BINGOsum">1</td>
+        <td class="pattern">変動</td>
+        <td class="percent">変動</td>
+        <td class="reset">初期指定</td>
+        <td class="BINGOpercent">変動</td>
+        <td class="BINGOreset">初期指定</td>
+        <td class="MGPdata">30,000</td>
+      </tr>
+      <tr id="table2" class="tabletr">
+        <td class="BINGOsum">2</td>
+        <td class="pattern">変動</td>
+        <td class="percent">変動</td>
+        <td class="reset">初期指定</td>
+        <td class="BINGOpercent">変動</td>
+        <td class="BINGOreset">初期指定</td>
+        <td class="MGPdata">130,000</td>
+      </tr>
+      <tr id="table3" class="tabletr">
+        <td class="BINGOsum">3</td>
+        <td class="pattern">変動</td>
+        <td class="percent">変動</td>
+        <td class="reset">初期指定</td>
+        <td class="BINGOpercent">変動</td>
+        <td class="BINGOreset">初期指定</td>
+        <td class="MGPdata">1,130,000</td>
+      </tr>
+    </table>
+  </div>
+
+  <div class="result_text" id="finalresult0">変動％</div>
+  <div class="result_text" id="finalresult1">変動％</div>
+  <div class="result_text">(MGPベース)</div>
+  <p>
+    クロの空想帳をリセットした場合の確率が分かる計算機です<br>
+    最終的な評価値は、交換で得られるMGPで計算しています<br>
+    2-3ビンゴ以上を狙いたい場合は、以上確率と以上リセ後期待値を見てください
+  </p>
+  <p>左側に<strong style="color: red;">4-9つ</strong>入力して計算開始を押すと
+    <br>右側にビンゴ数が出る確率とMGP期待値が、下側にリセットして改善される確率が出ます<br>
+  </p>
+  <p style="font-weight: bolder;">リセットして良くなる確率50%位でリセットチャレンジすると地獄を見ることになるので注意</p>
+</body>
+
+</html>

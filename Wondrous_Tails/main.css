@@ -1,0 +1,60 @@
+@charset "utf-8";
+
+.cell_input {
+  margin: 0;
+  width: 6vw;
+  height: 6vw;
+}
+
+#base {
+  display: grid;
+  grid-template-columns: 6vw 6vw 6vw 6vw;
+}
+
+.pattern {
+  display: none;
+}
+
+#flex_mother {
+  display: flex;
+}
+
+#resulttable {
+  border-collapse: collapse;
+  border: 1px solid black;
+  text-align: right;
+}
+
+* {
+  font-size: 1vw;
+}
+
+.result_text {
+  font-weight: bolder;
+}
+
+#tableAll>td {
+  border-top: 1px solid black;
+  border-bottom: 1px solid black;
+}
+
+th,
+td {
+  border-right: 1px solid #afafaf;
+  border-left: 1px solid #afafaf;
+}
+
+th:first-child,
+td:first-child {
+  border-left: 1px solid black;
+}
+
+th:last-child,
+td:last-child {
+  border-right: 1px solid black;
+}
+
+.BINGOsum,
+#tablehead {
+  text-align: center;
+}
