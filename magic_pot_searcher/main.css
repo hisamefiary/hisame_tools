@@ -1,0 +1,92 @@
+#id_canvas_all {
+  canvas {
+    width: calc(min(70vw, 900px));
+    height: calc(min(70vw, 900px));
+    position: fixed;
+    top: 0px;
+    left: 0px;
+  }
+
+  .break {
+    display: none;
+  }
+
+  #id_canvas_list_box canvas {
+    z-index: 4;
+  }
+
+  #id_canvas_list_pin canvas {
+    z-index: 5;
+  }
+
+  #id_canvas_list_fill canvas {
+    z-index: 2;
+    opacity: 0.4;
+  }
+
+  #id_canvas_list_border canvas {
+    z-index: 3;
+    opacity: 0.4;
+  }
+
+  #id_img_map_list {
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    z-index: 1;
+
+    img {
+      width: min(70vw, 900px);
+      height: min(70vw, 900px);
+    }
+  }
+}
+
+
+
+#id_select_mother {
+  position: fixed;
+  top: 0px;
+  right: 0px;
+  z-index: 6;
+
+  div {
+    text-align: end;
+  }
+
+  #id_select_map {
+    padding-top: 1vw;
+
+    select, label {
+      font-size: 1.5vw;
+    }
+  }
+
+  #id_select_other {
+    padding-top: 1vw;
+
+    label {
+      font-size: 2.5vw;
+    }
+
+    input#id_am, input#id_an, input#id_ao {
+      width: 2vw;
+      height: 2vw
+    }
+
+
+    button#id_reset {
+      font-size: 1.5vw;
+      width: 100%;
+      line-height: 2;
+    }
+  }
+
+
+  #id_select_list_aetheryte {
+    select, label {
+      font-size: 2.5vw;
+      font-family: sans-serif;
+    }
+  }
+}
