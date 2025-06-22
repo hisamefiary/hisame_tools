@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+  <meta charset="utf-8">
+  <title>ミニくじテンダー計算機Ver1.0</title>
+  <meta name="description" content="ミニくじテンダー計算機">
+
+  <link rel="stylesheet" href="main.css">
+  <script type="text/javascript" src="main.js"></script>
+  <script type="text/javascript" src="js/14select4expected.js"></script>
+  <script type="text/javascript" src="js/13select3expected.js"></script>
+  <script type="text/javascript" src="js/12select2expected.js"></script>
+  <script type="text/javascript" src="js/11select1expected.js"></script>
+  <script type="text/javascript" src="js/10select0expected.js"></script>
+
+
+  <link rel="icon" href="../../icon.png">
+  <script type="text/javascript" src="../../general.js"></script>
+
+  <link rel="stylesheet" href="../../headerfooter.css">
+  <script type="text/javascript" src="../../headerfooter.js"></script>
+</head>
+
+<body>
+  <main>
+    <h1>ミニくじテンダー計算機</h1>
+    <h2>計算部分</h2>
+    <div class="selectBox">
+      <select id="cell1" class="cell">
+        <option value="1">1</option>
+        <option value="2">2</option>
+        <option value="3">3</option>
+        <option value="4">4</option>
+        <option value="5">5</option>
+        <option value="6">6</option>
+        <option value="7">7</option>
+        <option value="8">8</option>
+        <option value="9">9</option>
+        <option value="?" selected>?</option>
+      </select>
+      <select id="cell2" class="cell">
+        <option value="1">1</option>
+        <option value="2">2</option>
+        <option value="3">3</option>
+        <option value="4">4</option>
+        <option value="5">5</option>
+        <option value="6">6</option>
+        <option value="7">7</option>
+        <option value="8">8</option>
+        <option value="9">9</option>
+        <option value="?" selected>?</option>
+      </select>
+      <select id="cell3" class="cell">
+        <option value="1">1</option>
+        <option value="2">2</option>
+        <option value="3">3</option>
+        <option value="4">4</option>
+        <option value="5">5</option>
+        <option value="6">6</option>
+        <option value="7">7</option>
+        <option value="8">8</option>
+        <option value="9">9</option>
+        <option value="?" selected>?</option>
+      </select>
+      <select id="cell4" class="cell">
+        <option value="1">1</option>
+        <option value="2">2</option>
+        <option value="3">3</option>
+        <option value="4">4</option>
+        <option value="5">5</option>
+        <option value="6">6</option>
+        <option value="7">7</option>
+        <option value="8">8</option>
+        <option value="9">9</option>
+        <option value="?" selected>?</option>
+      </select>
+      <select id="cell5" class="cell">
+        <option value="1">1</option>
+        <option value="2">2</option>
+        <option value="3">3</option>
+        <option value="4">4</option>
+        <option value="5">5</option>
+        <option value="6">6</option>
+        <option value="7">7</option>
+        <option value="8">8</option>
+        <option value="9">9</option>
+        <option value="?" selected>?</option>
+      </select>
+      <select id="cell6" class="cell">
+        <option value="1">1</option>
+        <option value="2">2</option>
+        <option value="3">3</option>
+        <option value="4">4</option>
+        <option value="5">5</option>
+        <option value="6">6</option>
+        <option value="7">7</option>
+        <option value="8">8</option>
+        <option value="9">9</option>
+        <option value="?" selected>?</option>
+      </select>
+      <select id="cell7" class="cell">
+        <option value="1">1</option>
+        <option value="2">2</option>
+        <option value="3">3</option>
+        <option value="4">4</option>
+        <option value="5">5</option>
+        <option value="6">6</option>
+        <option value="7">7</option>
+        <option value="8">8</option>
+        <option value="9">9</option>
+        <option value="?" selected>?</option>
+      </select>
+      <select id="cell8" class="cell">
+        <option value="1">1</option>
+        <option value="2">2</option>
+        <option value="3">3</option>
+        <option value="4">4</option>
+        <option value="5">5</option>
+        <option value="6">6</option>
+        <option value="7">7</option>
+        <option value="8">8</option>
+        <option value="9">9</option>
+        <option value="?" selected>?</option>
+      </select>
+      <select id="cell9" class="cell">
+        <option value="1">1</option>
+        <option value="2">2</option>
+        <option value="3">3</option>
+        <option value="4">4</option>
+        <option value="5">5</option>
+        <option value="6">6</option>
+        <option value="7">7</option>
+        <option value="8">8</option>
+        <option value="9">9</option>
+        <option value="?" selected>?</option>
+      </select>
+    </div>
+    <button id="reset">リセットボタン</button>
+    <h2>使い方</h2>
+    <div>
+      ミニくじテンダーの期待値が一番高くなる開き方です<br>
+      1つ入力すると開くべきところが赤くなります<br>
+      4つ入力すると選ぶべき線が青くなります<br>
+      データ量が多いので再読み込みには時間がかかります<br>
+      追記：数年ぶりに見返したらまじで終わってるシステムすぎて笑えない、そのうち直すかも<br>
+    </div>
+
+  </main>
+
+</body>
+
+</html>
