@@ -15,7 +15,7 @@ document.addEventListener('DOMContentLoaded', function () {
 
     let h2 = create("h2", undefined, header)
     let a = create("a", undefined, h2)
-    a.href = "https://hisamefiary.github.io/hisamesite/"
+    a.href = "https://hisamefiary.github.io/hisamesite/main/list/home/"
     a.innerHTML = "hisamesite"
 
     let h3 = create("h3", undefined, header)
@@ -46,7 +46,7 @@ document.addEventListener('DOMContentLoaded', function () {
 
     let p3 = create("p", "使いやすさだけを追い求めているためほぼ無機質です<br>利便性改善のための装飾はいつか作るかもしれません", footer)
 
-    let p4 = create("p", "<a href='https://hisamefiary.github.io/hisamesite/'>トップページに飛ぶ</a>", footer)
+    let p4 = create("p", "<a href='https://hisamefiary.github.io/hisamesite/main/list/home/'>トップページに飛ぶ</a>", footer)
 
     let p5 = create("p", "© SQUARE ENIX" + "<br>" + "© Hisame Fiary", footer)
 
