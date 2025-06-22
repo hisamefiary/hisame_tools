@@ -1,22 +1,30 @@
-#id_canvas_all {
-  canvas {
-    width: calc(min(70vw, 900px));
-    height: calc(min(70vw, 900px));
-    position: fixed;
-    top: 0px;
-    left: 0px;
+body,
+#id_all #id_canvas_all div>canvas,
+#id_all #id_canvas_all div>img {
+  height: calc(min(100vw - 300px, 100vh - 100px));
+}
+
+#id_all #id_canvas_all div>canvas,
+#id_all #id_canvas_all div>img {
+  position: absolute;
+  width: calc(min(100vw - 300px, 100vh - 100px));
+}
+
+#id_all {
+
+
+  #id_canvas_all {
+    position: relative;
+
+
+    .break {
+      display: none;
+    }
   }
 
-  .break {
-    display: none;
-  }
 
-  #id_canvas_list_box canvas {
-    z-index: 4;
-  }
-
-  #id_canvas_list_pin canvas {
-    z-index: 5;
+  #id_img_map_list {
+    z-index: 1;
   }
 
   #id_canvas_list_fill canvas {
@@ -29,64 +37,60 @@
     opacity: 0.4;
   }
 
-  #id_img_map_list {
-    position: fixed;
-    top: 0px;
-    left: 0px;
-    z-index: 1;
-
-    img {
-      width: min(70vw, 900px);
-      height: min(70vw, 900px);
-    }
-  }
-}
-
-
-
-#id_select_mother {
-  position: fixed;
-  top: 0px;
-  right: 0px;
-  z-index: 6;
-
-  div {
-    text-align: end;
+  #id_canvas_list_box canvas {
+    z-index: 4;
   }
 
-  #id_select_map {
-    padding-top: 1vw;
-
-    select, label {
-      font-size: 1.5vw;
-    }
+  #id_canvas_list_pin canvas {
+    z-index: 5;
   }
 
-  #id_select_other {
-    padding-top: 1vw;
+  #id_select_mother {
+    position: relative;
+    z-index: 6;
 
-    label {
-      font-size: 2.5vw;
+    div {
+      text-align: end;
     }
 
-    input#id_am, input#id_an, input#id_ao {
-      width: 2vw;
-      height: 2vw
+    #id_select_map {
+      padding-top: 1vw;
+
+      select,
+      label {
+        font-size: 1rem;
+      }
     }
 
+    #id_select_other {
+      padding-top: 1vw;
 
-    button#id_reset {
-      font-size: 1.5vw;
-      width: 100%;
-      line-height: 2;
+      select,
+      label {
+        font-size: 1.5rem;
+      }
+
+      input {
+        width: 1.5rem;
+        height: 1.5rem;
+      }
+
+      button {
+        font-size: 1rem;
+        line-height: 2;
+      }
     }
+
+    #id_select_list_aetheryte {
+      padding-top: 1vw;
+
+      select,
+      label {
+        font-size: 1.5rem;
+        font-family: sans-serif;
+      }
+    }
+
   }
 
-
-  #id_select_list_aetheryte {
-    select, label {
-      font-size: 2.5vw;
-      font-family: sans-serif;
-    }
-  }
 }

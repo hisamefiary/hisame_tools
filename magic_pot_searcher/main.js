@@ -6,10 +6,10 @@ document.addEventListener('DOMContentLoaded', function () {
     "The Occult Crescent: South Horn": {
       name_jp: "クレセントアイル：南征編",
       name_en: "The Occult Crescent: South Horn",
-      mapurl: "https://hisamefiary.wordpress.com/wp-content/uploads/2025/06/e382afe383ace382bbe383b3e38388e382a2e382a4e383abefbc9ae58d97e5be81e7b7a8_e3839ee38383e38397.png",
-      bronzebox: "https://hisamefiary.wordpress.com/wp-content/uploads/2025/06/e98a85e7aeb1.png",
-      silverbox: "https://hisamefiary.wordpress.com/wp-content/uploads/2025/06/e98a80e7aeb1.png",
-      otherbox: "https://hisamefiary.wordpress.com/wp-content/uploads/2025/06/e98a85e7aeb1_e4b88de6988e.png",
+      mapurl: "img/クレセントアイル：南征編_マップ.png",
+      bronzebox: "img/銅箱.png",
+      silverbox: "img/銀箱.png",
+      otherbox: "img/銅箱_不明.png",
       aetheryte: [
         { name_jp: "デジョン先", name_en: "Return point", pos: { x: 38.4, y: 7.3 } },
         { name_jp: "放浪神聖域跡前", name_en: "The Wanderer's Haven", pos: { x: 18.0, y: 9.2 } },
@@ -50,6 +50,7 @@ document.addEventListener('DOMContentLoaded', function () {
         { x: 17.5, y: 15.7, color: "silver" },
         { x: 22.6, y: 16.7, color: "other" },
         { x: 5.2, y: 16.9, color: "silver" },
+        { x: 5.2, y: 16.9, color: "bronze" },
         { x: 8.2, y: 17, color: "bronze" },
         { x: 8.2, y: 17, color: "gold" },
         { x: 8.2, y: 17, color: "bronze" },
@@ -112,7 +113,7 @@ document.addEventListener('DOMContentLoaded', function () {
         { x: 29.3, y: 38.2, color: "bronze" },
         { x: 9.4, y: 38.5, color: "silver" },
         { x: 30.1, y: 38.8, color: "silver" },
-        { x: 5.2, y: 16.9, color: "bronze" },
+        { x: 15.1, y: 20.7, color: "silver" },
 
 
       ],
@@ -133,9 +134,11 @@ document.addEventListener('DOMContentLoaded', function () {
         { x: 18.3, y: 18.8, color: "bronze" },
         { x: 18.7, y: 13.1, color: "bronze" },
         { x: 19.1, y: 7.3, color: "bronze" },
+        { x: 20.9, y: 24.4, color: "bronze" },
         { x: 21.6, y: 30.0, color: "bronze" },
         { x: 22.2, y: 34.4, color: "bronze" },
         { x: 22.5, y: 15.7, color: "bronze" },
+        { x: 24.1, y: 36.9, color: "bronze" },
         { x: 24.2, y: 36.9, color: "bronze" },
         { x: 24.3, y: 9.9, color: "bronze" },
         { x: 24.3, y: 36.9, color: "bronze" },
@@ -146,6 +149,7 @@ document.addEventListener('DOMContentLoaded', function () {
         { x: 28.5, y: 15.6, color: "bronze" },
         { x: 29.1, y: 6.6, color: "bronze" },
         { x: 29.2, y: 12.4, color: "bronze" },
+        { x: 3.8, y: 7.8, color: "bronze" },
         { x: 30.1, y: 35.1, color: "bronze" },
         { x: 30.9, y: 19.7, color: "bronze" },
         { x: 30.9, y: 32.0, color: "bronze" },
@@ -176,6 +180,7 @@ document.addEventListener('DOMContentLoaded', function () {
         { x: 6.8, y: 6.9, color: "bronze" },
         { x: 7.1, y: 37.3, color: "bronze" },
         { x: 7.2, y: 25.3, color: "bronze" },
+        { x: 7.7, y: 22.1, color: "other" },
         { x: 7.8, y: 14.4, color: "bronze" },
         { x: 7.8, y: 17.5, color: "silver" },
         { x: 7.9, y: 34.2, color: "bronze" },
@@ -184,10 +189,7 @@ document.addEventListener('DOMContentLoaded', function () {
         { x: 8.5, y: 35.6, color: "silver" },
         { x: 9.4, y: 37.5, color: "bronze" },
         { x: 9.7, y: 4.1, color: "bronze" },
-        { x: 4.2, y: 8.4, color: "other" },
-        { x: 7.7, y: 22.1, color: "other" },
-        { x: 24.1, y: 36.9, color: "bronze" },
-        { x: 20.9, y: 24.4, color: "bronze" },
+
 
       ],
     }
@@ -198,16 +200,6 @@ document.addEventListener('DOMContentLoaded', function () {
   const otherimage = new Image();
 
 
-  debug()
-  function debug() {
-    if (location.host.match(/wixsite\.com$/)) {
-    } else {
-      mapdata["The Occult Crescent: South Horn"]["mapurl"] = "img/クレセントアイル：南征編_マップ.png"
-      mapdata["The Occult Crescent: South Horn"]["bronzebox"] = "img/銅箱.png"
-      mapdata["The Occult Crescent: South Horn"]["silverbox"] = "img/銀箱.png"
-      mapdata["The Occult Crescent: South Horn"]["otherbox"] = "img/銅箱_不明.png"
-    }
-  }
   lang_push()
   function lang_push() {
     switch (lang) {
@@ -243,7 +235,6 @@ document.addEventListener('DOMContentLoaded', function () {
     let ele = document.createElement(tag)
     parent.appendChild(ele)
     return ele
-
   }
   function mapreload(map) {
     nowmap = mapdata[map]
