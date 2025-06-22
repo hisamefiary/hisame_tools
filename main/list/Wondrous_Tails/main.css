@@ -1,0 +1,57 @@
+@charset "utf-8";
+
+
+* {
+  font-size: 2fr;
+}
+
+#flex_mother {
+  display: flex;
+  flex-wrap: wrap;
+
+  #base {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+
+    .cell_input {
+      margin: 0;
+      width: 6vh;
+      height: 6vh;
+    }
+  }
+
+  #result_table {
+    border-collapse: collapse;
+    border: 1px solid black;
+    text-align: right;
+
+    .tableAll {
+      border-right: 1px solid black;
+      border-left: 1px solid black;
+    }
+
+    th,
+    td {
+      border-top: 1px solid #afafaf;
+      border-bottom: 1px solid #afafaf;
+    }
+
+    #percent>.tableA,
+    #reset>.tableA,
+    #BINGOpercent>.tableA,
+    #BINGOreset>.tableA,
+    #MGPdata>.tableA,
+    #BINGOsum>.table0,
+    #BINGOsum>.table1,
+    #BINGOsum>.table2,
+    #BINGOsum>.table3 {
+      text-align: center;
+    }
+
+  }
+}
+
+
+.result_text {
+  font-weight: bolder;
+}
