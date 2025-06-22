@@ -1,4 +1,4 @@
-body,
+#id_all,
 #id_all #id_canvas_all div>canvas,
 #id_all #id_canvas_all div>img {
   height: calc(min(100vw - 300px, 100vh - 100px));
