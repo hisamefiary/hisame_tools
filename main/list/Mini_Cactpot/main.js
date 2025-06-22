@@ -63,12 +63,12 @@ document.addEventListener('DOMContentLoaded', function () {
       let エラーテスト1 = 入力配列.filter(i => i !== "?");
       let エラーテスト2 = Array.from(new Set(エラーテスト1))
       if (エラーテスト1.length !== エラーテスト2.length) {
-        alert("同じ数字を入力した事によるエラー")
+        // alert("同じ数字を入力した事によるエラー")
       } else if (入力数値数 > 4) {
-        alert("5つ以上入力した事によるエラー")
+        // alert("5つ以上入力した事によるエラー")
       } else if (入力数値数 === 0) {
       } else {
-        alert("原因不明のエラー")
+        // alert("原因不明のエラー")
         console.log(error)
       }
     }
