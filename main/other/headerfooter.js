@@ -34,21 +34,31 @@ document.addEventListener('DOMContentLoaded', function () {
     html.insertBefore(footer, body.nextElementSibling)
 
     let p1 = create("p", undefined, footer)
-    let span1 = create("span", "ご意見、ご要望がございましたら、", p1)
+    let span1_1 = create("span", "ご意見、ご要望がございましたら、", p1)
     let a1 = create("a", undefined, p1)
     a1.href = "https://twitter.com/hisamefiary"
     a1.rel = 'noopener noreferrer'
     a1.target = "_blank"
     a1.innerHTML = "Twitter"
-    let span2 = create("span", "にDMやリプをお願いします", p1)
+    let span1_2 = create("span", "にDMやリプをお願いします", p1)
 
     let p2 = create("p", "当サイトはPC版chromeでウィンドウサイズ960×1080<br>つまりディスプレイの半分で開いた状態で使うことを想定して作られZています", footer)
 
-    let p3 = create("p", "使いやすさだけを追い求めているためほぼ無機質です<br>利便性改善のための装飾はいつか作るかもしれません", footer)
+    let p3 = create("p", undefined, footer)
+    let span3_1 = create("span", "不具合が発生した場合shift+F5で再読み込みしてみてください、エラーの場合は", p3)
+    let a2 = create("a", undefined, p3)
+    a2.href = "https://twitter.com/hisamefiary"
+    a2.rel = 'noopener noreferrer'
+    a2.target = "_blank"
+    a2.innerHTML = "Twitter"
+    let span3_2 = create("span", "から報告お願いします…", p3)
 
-    let p4 = create("p", "<a href='https://hisamefiary.github.io/hisamesite/main/list/home/'>トップページに飛ぶ</a>", footer)
 
-    let p5 = create("p", "© SQUARE ENIX" + "<br>" + "© Hisame Fiary", footer)
+    let p4 = create("p", "使いやすさだけを追い求めているためほぼ無機質です<br>利便性改善のための装飾はいつか作るかもしれません", footer)
+
+    let p5 = create("p", "<a href='https://hisamefiary.github.io/hisamesite/main/list/home/'>トップページに飛ぶ</a>", footer)
+
+    let p6 = create("p", "© SQUARE ENIX" + "<br>" + "© Hisame Fiary", footer)
 
     //フッター追加終了
   }
