@@ -42,7 +42,7 @@ document.addEventListener('DOMContentLoaded', function () {
     a1.innerHTML = "Twitter"
     let span1_2 = create("span", "にDMやリプをお願いします", p1)
 
-    let p2 = create("p", "当サイトはPC版chromeでウィンドウサイズ960×1080<br>つまりディスプレイの半分で開いた状態で使うことを想定して作られZています", footer)
+    let p2 = create("p", "当サイトはPC版chromeでウィンドウサイズ960×1080<br>つまりディスプレイの半分で開いた状態で使うことを想定して作られています", footer)
 
     let p3 = create("p", undefined, footer)
     let span3_1 = create("span", "不具合が発生した場合shift+F5で再読み込みしてみてください、エラーの場合は", p3)
