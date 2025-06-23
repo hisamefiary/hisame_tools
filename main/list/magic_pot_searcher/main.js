@@ -1,7 +1,6 @@
 'use strict';
 document.addEventListener('DOMContentLoaded', function () {
 
-  let lang = "jp"
   let mapdata = {
     "The Occult Crescent: South Horn": {
       name_jp: "クレセントアイル：南征編",
@@ -64,13 +63,14 @@ document.addEventListener('DOMContentLoaded', function () {
         { x: 4.6, y: 19, color: "gold" },
         { x: 12.1, y: 19.6, color: "other" },
         { x: 38.9, y: 19.7, color: "silver" },
-        { x: 6.8, y: 19.8, color: "othe2" },
         { x: 8.5, y: 20, color: "bronze" },
         { x: 8.5, y: 20, color: "silver" },
         { x: 15.2, y: 20.7, color: "bronze" },
+        { x: 15.2, y: 20.7, color: "silver" },
         { x: 39.2, y: 21.1, color: "silver" },
         { x: 7.9, y: 21.3, color: "bronze" },
         { x: 5.3, y: 21.4, color: "othe2" },
+        { x: 12.3, y: 21.6, color: "bronze" },
         { x: 12.3, y: 21.6, color: "bronze" },
         { x: 12.3, y: 21.6, color: "bronze" },
         { x: 12.3, y: 21.6, color: "silver" },
@@ -85,6 +85,7 @@ document.addEventListener('DOMContentLoaded', function () {
         { x: 15.1, y: 25.7, color: "othe2" },
         { x: 32.9, y: 26.9, color: "silver" },
         { x: 32.9, y: 26.9, color: "bronze" },
+        { x: 26.7, y: 28.1, color: "bronze" },
         { x: 26.7, y: 28.1, color: "silver" },
         { x: 35.5, y: 28.8, color: "other" },
         { x: 23.2, y: 29.4, color: "other" },
@@ -113,7 +114,7 @@ document.addEventListener('DOMContentLoaded', function () {
         { x: 29.3, y: 38.2, color: "bronze" },
         { x: 9.4, y: 38.5, color: "silver" },
         { x: 30.1, y: 38.8, color: "silver" },
-        { x: 15.1, y: 20.7, color: "silver" },
+
 
 
       ],
@@ -180,7 +181,6 @@ document.addEventListener('DOMContentLoaded', function () {
         { x: 6.8, y: 6.9, color: "bronze" },
         { x: 7.1, y: 37.3, color: "bronze" },
         { x: 7.2, y: 25.3, color: "bronze" },
-        { x: 7.7, y: 22.1, color: "other" },
         { x: 7.8, y: 14.4, color: "bronze" },
         { x: 7.8, y: 17.5, color: "silver" },
         { x: 7.9, y: 34.2, color: "bronze" },
@@ -189,8 +189,6 @@ document.addEventListener('DOMContentLoaded', function () {
         { x: 8.5, y: 35.6, color: "silver" },
         { x: 9.4, y: 37.5, color: "bronze" },
         { x: 9.7, y: 4.1, color: "bronze" },
-
-
       ],
     }
   }
@@ -208,8 +206,14 @@ document.addEventListener('DOMContentLoaded', function () {
         document.querySelector("label[for='id_an']").innerHTML = "pot switch"
         document.querySelector("label[for='id_ao']").innerHTML = "border switch"
         document.querySelector("label[for='id_map_select']").innerHTML = "map select"
-        document.querySelector("select#id_map_select>option").innerHTML = "The Occult Crescent: South Horn"//仮置き
         document.querySelector("button#id_reset").innerHTML = "reset & map reload"
+        break;
+      case "jp":
+        document.querySelector("label[for='id_am']").innerHTML = "宝箱表示切替"
+        document.querySelector("label[for='id_an']").innerHTML = "マジポ表示切替"
+        document.querySelector("label[for='id_ao']").innerHTML = "格子表示切替"
+        document.querySelector("label[for='id_map_select']").innerHTML = "マップ選択"
+        document.querySelector("button#id_reset").innerHTML = "リセット&マップ読み込み"
         break;
     }
   }
