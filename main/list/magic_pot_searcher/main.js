@@ -1,22 +1,22 @@
 'use strict';
 document.addEventListener('DOMContentLoaded', function () {
-
+  let lang = document.querySelector("html").lang
   let mapdata = {
     "The Occult Crescent: South Horn": {
-      name_jp: "クレセントアイル：南征編",
+      name_ja: "クレセントアイル：南征編",
       name_en: "The Occult Crescent: South Horn",
       mapurl: "img/クレセントアイル：南征編_マップ.png",
       bronzebox: "img/銅箱.png",
       silverbox: "img/銀箱.png",
       otherbox: "img/銅箱_不明.png",
       aetheryte: [
-        { name_jp: "デジョン先", name_en: "Return point", pos: { x: 38.4, y: 7.3 } },
-        { name_jp: "放浪神聖域跡前", name_en: "The Wanderer's Haven", pos: { x: 18.0, y: 9.2 } },
-        { name_jp: "水晶洞窟前", name_en: "Crystallized Caverns", pos: { x: 14.3, y: 19.0 } },
-        { name_jp: "古樹の湿原前", name_en: "Eldergrowth", pos: { x: 27.5, y: 27.5 } },
-        { name_jp: "石塔水沼前", name_en: "Stonemarsh", pos: { x: 13.7, y: 27.0 } },
-        { name_jp: "北ポット", name_en: "North magic pots", pos: { x: 25.5, y: 17.1 } },
-        { name_jp: "南ポット", name_en: "South magic pots", pos: { x: 11.8, y: 31.8 } },
+        { name_ja: "デジョン先", name_en: "Return point", pos: { x: 38.4, y: 7.3 } },
+        { name_ja: "放浪神聖域跡前", name_en: "The Wanderer's Haven", pos: { x: 18.0, y: 9.2 } },
+        { name_ja: "水晶洞窟前", name_en: "Crystallized Caverns", pos: { x: 14.3, y: 19.0 } },
+        { name_ja: "古樹の湿原前", name_en: "Eldergrowth", pos: { x: 27.5, y: 27.5 } },
+        { name_ja: "石塔水沼前", name_en: "Stonemarsh", pos: { x: 13.7, y: 27.0 } },
+        { name_ja: "北ポット", name_en: "North magic pots", pos: { x: 25.5, y: 17.1 } },
+        { name_ja: "南ポット", name_en: "South magic pots", pos: { x: 11.8, y: 31.8 } },
       ],
       offset_0: { x: 1, y: 1 },
       offset_1: { x: 41.9, y: 41.9 },
@@ -208,7 +208,7 @@ document.addEventListener('DOMContentLoaded', function () {
         document.querySelector("label[for='id_map_select']").innerHTML = "map select"
         document.querySelector("button#id_reset").innerHTML = "reset & map reload"
         break;
-      case "jp":
+      case "ja":
         document.querySelector("label[for='id_am']").innerHTML = "宝箱表示切替"
         document.querySelector("label[for='id_an']").innerHTML = "マジポ表示切替"
         document.querySelector("label[for='id_ao']").innerHTML = "格子表示切替"
@@ -404,15 +404,15 @@ document.addEventListener('DOMContentLoaded', function () {
 
 
       let direction_call_fill = {
-        "・not": { name_en: "・not", name_jp: "・無　", en: [], jp: [], },
-        "↑N  ": { name_en: "↑N  ", name_jp: "↑北　", en: ["↖NNW", "↖NW ", "↙SW ", "↘SE ", "↗NE ", "↗NNE",], },
-        "↗NE ": { name_en: "↗NE ", name_jp: "↗北東", en: ["↗NNE", "↖NW ", "↙SW ", "↘SE ", "↗NE ", "↗ENE",], },
-        "→E  ": { name_en: "→E  ", name_jp: "→東　", en: ["↗ENE", "↗NE ", "↖NW ", "↙SW ", "↘SE ", "↘ESE",], },
-        "↘SE ": { name_en: "↘SE ", name_jp: "↘南東", en: ["↘ESE", "↗NE ", "↖NW ", "↙SW ", "↘SE ", "↘SSE",], },
-        "↓S  ": { name_en: "↓S  ", name_jp: "↓南　", en: ["↘SSE", "↘SE ", "↗NE ", "↖NW ", "↙SW ", "↙SSW",], },
-        "↙SW ": { name_en: "↙SW ", name_jp: "↙南西", en: ["↙SSW", "↘SE ", "↗NE ", "↖NW ", "↙SW ", "↙WSW",], },
-        "←W  ": { name_en: "←W  ", name_jp: "←西　", en: ["↙WSW", "↙SW ", "↘SE ", "↗NE ", "↖NW ", "↖WNW",], },
-        "↖NW ": { name_en: "↖NW ", name_jp: "↖北西", en: ["↖WNW", "↙SW ", "↘SE ", "↗NE ", "↖NW ", "↖NNW",], },
+        "・not": { name_en: "・not", name_ja: "・無　", en: [], ja: [], },
+        "↑N  ": { name_en: "↑N  ", name_ja: "↑北　", en: ["↖NNW", "↖NW ", "↙SW ", "↘SE ", "↗NE ", "↗NNE",], },
+        "↗NE ": { name_en: "↗NE ", name_ja: "↗北東", en: ["↗NNE", "↖NW ", "↙SW ", "↘SE ", "↗NE ", "↗ENE",], },
+        "→E  ": { name_en: "→E  ", name_ja: "→東　", en: ["↗ENE", "↗NE ", "↖NW ", "↙SW ", "↘SE ", "↘ESE",], },
+        "↘SE ": { name_en: "↘SE ", name_ja: "↘南東", en: ["↘ESE", "↗NE ", "↖NW ", "↙SW ", "↘SE ", "↘SSE",], },
+        "↓S  ": { name_en: "↓S  ", name_ja: "↓南　", en: ["↘SSE", "↘SE ", "↗NE ", "↖NW ", "↙SW ", "↙SSW",], },
+        "↙SW ": { name_en: "↙SW ", name_ja: "↙南西", en: ["↙SSW", "↘SE ", "↗NE ", "↖NW ", "↙SW ", "↙WSW",], },
+        "←W  ": { name_en: "←W  ", name_ja: "←西　", en: ["↙WSW", "↙SW ", "↘SE ", "↗NE ", "↖NW ", "↖WNW",], },
+        "↖NW ": { name_en: "↖NW ", name_ja: "↖北西", en: ["↖WNW", "↙SW ", "↘SE ", "↗NE ", "↖NW ", "↖NNW",], },
       }
 
       let direction_call_border = [
